@@ -1,114 +1,91 @@
-📊 Churn Analysis
+# 📊 Churn Analysis
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project focuses on analyzing and predicting customer churn using a complete data pipeline:
 
-Data Purification – SQL queries are used to clean, transform, and prepare the raw dataset for analysis.
+- **Data Purification** – SQL queries are used to clean, transform, and prepare the raw dataset for analysis.
 
-Churn Prediction – A Random Forest Classifier is implemented in Python (Jupyter Notebook) to identify customers at risk of churn.
+- **Churn Prediction** – A Random Forest Classifier is implemented in Python (Jupyter Notebook) to identify customers at risk of churn.
 
-Visualization – Results are visualized in Power BI, with two dedicated report pages and a navigator to switch between them:
+- **Visualization** – Results are visualized in Power BI, with two dedicated report pages and a navigator to switch between them:
 
-Summary Churn Analysis – Exploratory data analysis, churn trends, and key drivers.
+- **Summary Churn Analysis** – Exploratory data analysis, churn trends, and key drivers.
 
-Predicted Churn Analysis – Machine learning model predictions with probability-based risk segmentation.
+- **Predicted Churn Analysis** – Machine learning model predictions with probability-based risk segmentation.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-SQL – Data cleansing & transformation
+- **SQL** – Data cleansing & transformation.
 
-Python (Jupyter Notebook) – Data preprocessing, model building, evaluation
+- **Python (Jupyter Notebook)** – Data preprocessing, model building, evaluation.
 
-Scikit-learn – Random Forest implementation
+- **Scikit-learn** – Random Forest implementation.
 
-Pandas / NumPy – Data manipulation
+- **Pandas / NumPy** – Data manipulation.
 
-Power BI – Interactive dashboard with navigation
+- **Power BI** – Interactive dashboard with navigation.
 
-Matplotlib / Seaborn – Supporting data visualizations in Python
+- **Matplotlib / Seaborn** – Supporting data visualizations in Python.
 
-⚙️ Workflow
-1. Data Preparation (SQL)
+# ⚙️ Workflow
 
-Removed duplicates and null values
+1. **Data Preparation (SQL)**
 
-Standardized categorical features
+- Removed duplicates and null values.
 
-Created new KPIs (tenure, service usage, contract type, etc.)
+- Standardized categorical features.
 
-Exported the purified dataset for model training
+- Created new KPIs (tenure, service usage, contract type, etc.).
 
-2. Model Building (Python – Jupyter Notebook)
+- Exported the purified dataset for model training.
 
-Split data into train/test sets
+2. **Model Building (Python – Jupyter Notebook)**
 
-Applied Random Forest Classifier for churn prediction
+- Split data into train/test sets.
 
-Evaluated using accuracy, precision, recall, and F1-score
+- Applied Random Forest Classifier for churn prediction,
 
-Generated prediction probabilities for visualization
+- Evaluated using accuracy, precision, recall, and F1-score.
 
-3. Dashboard (Power BI)
+- Generated prediction probabilities for visualization.
 
-Sheet 1: Summary Churn Analysis
+3. **Dashboard (Power BI)**
 
-Customer distribution (active vs churned)
+**Sheet 1: Summary Churn Analysis**
 
-Key churn drivers (contract, service type, support calls, etc.)
+- Customer distribution (active vs churned).
 
-Sheet 2: Predicted Churn Analysis
+- Key churn drivers (contract, service type, support calls, etc.).
 
-Model output: high-risk, medium-risk, low-risk customers
+**Sheet 2: Predicted Churn Analysis**
 
-Interactive filters for demographic & service attributes
+- Model output: high-risk, medium-risk, low-risk customers
 
-Navigator allows smooth switching between the two report sheets
+- Interactive filters for demographic & service attributes
 
-📷 Dashboard Preview
+- Navigator allows smooth switching between the two report sheets.
 
-(Add screenshots of Power BI dashboards here)
+# 📈 Results
 
-📂 Repository Structure
-├── SQL/                  # Data purification queries
-├── Notebooks/            # Jupyter Notebook (Random Forest Model)
-├── Data/                 # Sample or anonymized dataset
-├── PowerBI/              # .pbix file of dashboard
-├── README.md             # Project documentation
+- Identified top churn factors: contract type, monthly charges, and customer service calls.
 
-🚀 How to Run
+- Achieved ~40% accuracy with Random Forest model.
 
-Clone the repository
+- Built a Power BI dashboard for business stakeholders to monitor churn and take action.
 
-git clone https://github.com/your-username/churn-analysis.git
-cd churn-analysis
+# 💡 Future Improvements
 
+- Test advanced ML models (XGBoost, Neural Networks).
 
-Run SQL scripts to purify dataset
+- Automate pipeline with n8n.
 
-Open Notebooks/Churn_Prediction.ipynb in Jupyter and run cells
+- Deploy dashboard with real-time data refresh.
 
-Import results into Power BI and open Churn_Analysis.pbix
+# 📬 Contact
 
-📈 Results
+👤 **Shivam Dharpure**
 
-Identified top churn factors: contract type, monthly charges, and customer service calls
+📧 **Email**: shivam1234pawar@gmail.com
 
-Achieved ~XX% accuracy with Random Forest model
-
-Built a Power BI dashboard for business stakeholders to monitor churn and take action
-
-💡 Future Improvements
-
-Test advanced ML models (XGBoost, Neural Networks)
-
-Automate pipeline with Airflow / n8n
-
-Deploy dashboard with real-time data refresh
-
-📬 Contact
-
-👤 Your Name
-📧 Email: your.email@example.com
-
-🔗 LinkedIn: Your Profile
+🔗 **LinkedIn**: https://www.linkedin.com/in/shivam-dharpure-2570071b5/
